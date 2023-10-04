@@ -6,7 +6,7 @@ import BreakingNews from "./BreakingNews";
 
 const Home = () => {
     return (
-        <div>
+        <div className="max-w-[1440px] mx-auto">
             <Header></Header>
             <BreakingNews></BreakingNews>
             <Navbar></Navbar>
