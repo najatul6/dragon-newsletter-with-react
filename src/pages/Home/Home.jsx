@@ -21,7 +21,7 @@ const Home = () => {
                 </div>
                 <div className="md:col-span-2 border-red-600">
                     {
-                        news.map(aNews => <NewsCard key={aNews.id} aNews={aNews}></NewsCard>)
+                        news?.slice(0,3).map(aNews => <NewsCard key={aNews.id} aNews={aNews}></NewsCard>)
                     }
                 </div>
                 <div>
