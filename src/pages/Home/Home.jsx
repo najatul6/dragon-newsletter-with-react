@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, Link } from "react-router-dom";
 import Header from "../share/Header/Header";
 import LeftSideNav from "../share/LeftSideNav/LeftSideNav";
 import Navbar from "../share/Navbar/Navbar";
@@ -28,6 +28,10 @@ const Home = () => {
                     <RightSideNav></RightSideNav>
                 </div>
             </div>
+            <footer className="text-center py-4 flex justify-center items-center gap-1 w-full">
+                    <p>&copy; {new Date().getFullYear()} The Dragon News. All rights reserved by - <Link to="https://najatul-islam.vercel.app/" target="_blank" className="text-bold text-xl cursor-pointer underline">Najatul Islam</Link>.</p>
+               
+            </footer>
         </div>
     );
 };
